@@ -4,7 +4,7 @@
 resource_group=$(az group list --query '[0].name' --output tsv)
 
 # Generate account name for Cosmos DB
-comos_account="cosmos"$RANDOM
+cosmos_account="cosmos"$RANDOM
 
 # Create Cosmos DB account
 az cosmosdb create \
